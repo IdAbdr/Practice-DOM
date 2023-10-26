@@ -43,10 +43,7 @@
             heading.textContent = `Word Count: ${wordCount}`;
             document.body.insertBefore(heading, paragraph);
 
-            // Replace question marks with thinking faces emoji
             paragraph.innerHTML = paragraph.innerHTML.replace(/\?/g, ' 😕');
-
-            // Replace exclamation marks with astonished faces emoji
             paragraph.innerHTML = paragraph.innerHTML.replace(/\!/g, ' 😲');
         });
     </script>
