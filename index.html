@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>DOM Exercises 01</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 
 <body>
@@ -43,7 +45,10 @@
             heading.textContent = `Word Count: ${wordCount}`;
             document.body.insertBefore(heading, paragraph);
 
+            // Replace question marks with thinking faces emoji
             paragraph.innerHTML = paragraph.innerHTML.replace(/\?/g, ' 😕');
+
+            // Replace exclamation marks with astonished faces emoji
             paragraph.innerHTML = paragraph.innerHTML.replace(/\!/g, ' 😲');
         });
     </script>
